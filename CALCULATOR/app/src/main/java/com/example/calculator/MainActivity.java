@@ -61,12 +61,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public static int calcularPotencia(int base, int exponente) {
-        // Caso base: Si el exponente es 0, el resultado es 1.
         if (exponente == 0) {
             return 1;
         }
-        // Caso recursivo: Calcular la potencia reduciendo el exponente en 1.
-        // Multiplicar la base por el resultado de la llamada recursiva.
         else {
             return base * calcularPotencia(base, exponente - 1);
         }
